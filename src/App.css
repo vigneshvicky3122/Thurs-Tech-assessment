@@ -1,0 +1,117 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+.shadow {
+  box-shadow: 5px 5px 1px #1e1e1e !important;
+}
+.box-shadow {
+  box-shadow: 3px 2px 2px #1e1e1e !important;
+}
+
+.accordion-button.collapsed::after {
+  background: url("./assets/plus-circle-fill.svg");
+  background-repeat: repeat;
+
+  box-shadow: none;
+  color: black !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("./assets/plus-circle-fill.svg");
+  background-repeat: repeat;
+  box-shadow: none !important;
+  color: black !important;
+}
+.accordion {
+  border: none !important;
+  --bs-accordion-border-radius: none !important;
+  --bs-accordion-border-width: none !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  color: black !important;
+}
+.accordion-item {
+  border: none;
+  border-bottom: 3px solid #1e1e1e;
+  background: transparent;
+  box-shadow: none !important;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: none !important;
+}
+.img-let {
+  position: absolute;
+  top: 40%;
+  color: white;
+  font-weight: bolder;
+  padding-left: 1rem;
+  font-size: 30px;
+}
+.suggestion {
+  position: absolute;
+  right: 0;
+  color: black;
+  font-weight: bolder;
+  margin: 10px 1rem 0 0;
+  font-size: 13px;
+  background-color: rgb(255, 221, 0);
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+.end-lett {
+  color: gray;
+  font-size: 170px;
+  font-weight: bolder;
+  text-align: center;
+}
+.ads-animation {
+  display: flex;
+  gap: 20em;
+  color: white;
+  align-items: center;
+  line-height: 3em;
+  background: rgb(255, 83, 83) !important;
+}
+.feature {
+  color: white;
+  background-color: #1e1e1e;
+  padding: 0 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.quote {
+  color: black;
+  font-weight: bolder;
+}
+.mandatory-width {
+  width: 20%;
+}
+.marquee {
+  width: 100%;
+  margin: 1px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  background-color: rgb(255, 83, 83);
+}
+
+.marquee span {
+  display: inline-flex;
+  padding-left: 95%;
+  color: black;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
